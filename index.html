@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col md:flex-row justify-center items-center h-screen">
+      <div
+        class="flex flex-col md:flex-row border overflow-hidden border-black rounded-xl"
+      >
+        <div class="p-[30px] flex flex-col gap-[40px]">
+          <div>
+            <p class="text-zinc-500 font-bold mb-1">Card Number</p>
+            <div class="border-b border-zinc-400 flex justify-center">
+              <input
+                type="text"
+                class="w-full outline-none bg-transparent border-0"
+                placeholder="1234 1234 1234 1234"
+              />
+              <img src="./masterCard.png" alt="" width="34px" />
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <p class="text-zinc-500 font-bold mb-1">MM YY</p>
+              <div class="border-b border-zinc-400 flex justify-center">
+                <input
+                  type="date"
+                  class="w-[200px] outline-none bg-transparent border-0"
+                  placeholder="02 07"
+                />
+              </div>
+            </div>
+            <div>
+              <p class="text-zinc-500 font-bold mb-1">CVC Code</p>
+              <div class="border-b border-zinc-400 flex justify-center">
+                <input
+                  type="text"
+                  class="outline-none mt-0.5 bg-transparent border-0"
+                  placeholder="1 2 3"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <p class="text-zinc-500 font-bold mb-1">Name</p>
+              <div class="border-b border-zinc-400 flex justify-center">
+                <input
+                  type="text"
+                  class="w-[240px] outline-none bg-transparent border-0"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-purple-500 rounded-full text-white px-[34px] h-[50px] shadow-xl text-lg font-bold"
+            >
+              Pay Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-purple-500 flex flex-col justify-center items-center px-12"
+        >
+          <img
+            src="./Laptop.png"
+            width="300px"
+            class="absolute mb-[50px]"
+            alt=""
+          />
+          <div class="mt-[200px] text-center">
+            <h1 class="text-white font-bold text-xl">Total</h1>
+            <p class="text-white font-bold">
+              <span class="text-lg">$ </span><span class="text-3xl"> 1.099</span
+              ><span class="text-lg">.00 </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
